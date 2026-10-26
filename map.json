@@ -6,21 +6,100 @@
     {
       "id": "sample-sites",
       "title": "Synthetic sample sites",
-      "layerType": "ArcGISFeatureLayer",
-      "url": "https://services1.arcgis.com/oC086ufSSQ6Avnw2/arcgis/rest/services/nova_1275_sample_sites_1793002407577/FeatureServer/0",
       "visibility": true,
-      "popupInfo": {
-        "title": "{Name}",
-        "fieldInfos": [
+      "opacity": 1,
+      "layerType": "ArcGISFeatureLayer",
+      "featureCollection": {
+        "layers": [
           {
-            "fieldName": "Name",
-            "label": "Name",
-            "visible": true
-          },
-          {
-            "fieldName": "Status",
-            "label": "Status",
-            "visible": true
+            "layerDefinition": {
+              "geometryType": "esriGeometryPoint",
+              "objectIdField": "OBJECTID",
+              "fields": [
+                {
+                  "name": "OBJECTID",
+                  "alias": "OBJECTID",
+                  "type": "esriFieldTypeOID"
+                },
+                {
+                  "name": "Name",
+                  "alias": "Name",
+                  "type": "esriFieldTypeString",
+                  "length": 255
+                },
+                {
+                  "name": "Status",
+                  "alias": "Status",
+                  "type": "esriFieldTypeString",
+                  "length": 255
+                },
+                {
+                  "name": "Latitude",
+                  "alias": "Latitude",
+                  "type": "esriFieldTypeDouble"
+                },
+                {
+                  "name": "Longitude",
+                  "alias": "Longitude",
+                  "type": "esriFieldTypeDouble"
+                }
+              ]
+            },
+            "featureSet": {
+              "geometryType": "esriGeometryPoint",
+              "spatialReference": {
+                "wkid": 4326
+              },
+              "features": [
+                {
+                  "geometry": {
+                    "x": -117.18,
+                    "y": 34.06,
+                    "spatialReference": {
+                      "wkid": 4326
+                    }
+                  },
+                  "attributes": {
+                    "Name": "Demo North",
+                    "Status": "Open",
+                    "Latitude": 34.06,
+                    "Longitude": -117.18,
+                    "OBJECTID": 1
+                  }
+                },
+                {
+                  "geometry": {
+                    "x": -117.17,
+                    "y": 34.04,
+                    "spatialReference": {
+                      "wkid": 4326
+                    }
+                  },
+                  "attributes": {
+                    "Name": "Demo South",
+                    "Status": "Planned",
+                    "Latitude": 34.04,
+                    "Longitude": -117.17,
+                    "OBJECTID": 2
+                  }
+                }
+              ]
+            },
+            "popupInfo": {
+              "title": "{Name}",
+              "fieldInfos": [
+                {
+                  "fieldName": "Name",
+                  "label": "Name",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Status",
+                  "label": "Status",
+                  "visible": true
+                }
+              ]
+            }
           }
         ]
       }
@@ -51,5 +130,18 @@
   "spatialReference": {
     "wkid": 102100,
     "latestWkid": 3857
+  },
+  "initialState": {
+    "viewpoint": {
+      "targetGeometry": {
+        "xmin": -117.2,
+        "ymin": 34.03,
+        "xmax": -117.15,
+        "ymax": 34.07,
+        "spatialReference": {
+          "wkid": 4326
+        }
+      }
+    }
   }
 }
