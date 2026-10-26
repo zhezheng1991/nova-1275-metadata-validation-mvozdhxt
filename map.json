@@ -1,0 +1,55 @@
+{
+  "version": "2.36",
+  "authoringApp": "ArcGIS Nova",
+  "authoringAppVersion": "0.1.0",
+  "operationalLayers": [
+    {
+      "id": "sample-sites",
+      "title": "Synthetic sample sites",
+      "layerType": "ArcGISFeatureLayer",
+      "url": "https://services1.arcgis.com/oC086ufSSQ6Avnw2/arcgis/rest/services/nova_1275_sample_sites_1793002407577/FeatureServer/0",
+      "visibility": true,
+      "popupInfo": {
+        "title": "{Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "Name",
+            "label": "Name",
+            "visible": true
+          },
+          {
+            "fieldName": "Status",
+            "label": "Status",
+            "visible": true
+          }
+        ]
+      }
+    }
+  ],
+  "baseMap": {
+    "title": "Topographic",
+    "baseMapLayers": [
+      {
+        "id": "world-hillshade-layer",
+        "title": "World Hillshade",
+        "url": "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "layerType": "ArcGISTiledMapServiceLayer",
+        "showLegend": false,
+        "visibility": true,
+        "opacity": 1
+      },
+      {
+        "id": "topo-vector-base-layer",
+        "title": "World Topo",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json",
+        "layerType": "VectorTileLayer",
+        "visibility": true,
+        "opacity": 1
+      }
+    ]
+  },
+  "spatialReference": {
+    "wkid": 102100,
+    "latestWkid": 3857
+  }
+}

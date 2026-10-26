@@ -1,0 +1,55 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-10-26T08:14:27.082Z",
+  "item": {
+    "title": "Sample Sites Explorer"
+  },
+  "map": {
+    "type": "webmap",
+    "path": "./map.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "map",
+    "showHeader": true,
+    "theme": {
+      "mode": "light",
+      "accent": "default"
+    },
+    "layout": {},
+    "widgets": [
+      {
+        "id": "default-home",
+        "type": "home",
+        "slot": "top-left",
+        "config": {}
+      },
+      {
+        "id": "default-scale-bar",
+        "type": "scaleBar",
+        "slot": "bottom-left",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": []
+  },
+  "nova": {
+    "basename": "sample-sites-explorer",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://www.arcgis.com",
+      "mapId": "output-7a27356c-dcb1-4804-8cb5-9e833cbddd7f",
+      "mapName": "Sample Sites Explorer",
+      "viewMode": "2d",
+      "capturedAt": "2026-10-26T08:14:27.081Z"
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": []
+  }
+}
